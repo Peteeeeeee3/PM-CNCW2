@@ -79,9 +79,9 @@ public class TCPServer implements Runnable {
 //    /**
 //     * @param args the command line arguments
 //     */
-//    public static void main(String[] args) {
-//        TCPServer server = new TCPServer();
-//        server.run();
-//    }
+    public static void main(String[] args) {
+        TCPServer server = new TCPServer();
+        server.run();
+    }
 }
 

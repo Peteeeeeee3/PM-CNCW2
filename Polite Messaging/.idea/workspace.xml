@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa7e82a-59c7-4d9c-91e9-4ae575746172" name="Default Changelist" comment="" />
+    <list default="true" id="0aa7e82a-59c7-4d9c-91e9-4ae575746172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ConnectionScreen.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ConnectionScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/JOptionPaneMultiInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/System/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/System/TCPClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Polite Messaging/System/TCPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Polite Messaging/System/TCPServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/TCPServer.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +27,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1rRFL0fUXubcivpe41lJ9167y0N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="205" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="368" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -87,8 +104,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Source" />
-        <item itemvalue="Application.TCPClient (1)" />
         <item itemvalue="Application.TCPServer" />
+        <item itemvalue="Application.TCPClient (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -104,6 +121,19 @@
       <updated>1618930935123</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
