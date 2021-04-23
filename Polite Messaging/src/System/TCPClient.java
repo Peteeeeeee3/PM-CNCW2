@@ -28,7 +28,7 @@ public class TCPClient extends Thread {
     public void run() {
         try {
             /*** Connect to the TCP server ***/
-            System.out.println("TCPClient connecting to " + host.toString() + ":" + port);
+            System.out.println("TCPClient connecting to " + host + ":" + port);
             Socket socket = new Socket(host, port);
             clconn = new TCPClientConnection(socket, this);
             clconn.start();

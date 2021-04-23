@@ -59,7 +59,7 @@ public class Message {
         }
     }
 
-    public static String hashID(ArrayList<String> headers) {
+    private static String hashID(ArrayList<String> headers) {
         StringBuilder toHash = new StringBuilder();
         String id = "";
         for (String header : headers) {

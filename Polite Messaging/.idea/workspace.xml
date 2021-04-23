@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aa7e82a-59c7-4d9c-91e9-4ae575746172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ConnectionScreen.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ConnectionScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/JOptionPaneMultiInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/System/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/System/TCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW2_v2/src/System/ClientResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/ChatScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/ChatScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/ChatScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/ChatScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/JOptionPaneMultiInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/GUI/JOptionPaneMultiInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/System/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/System/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/System/TCPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/out/production/CW2_v2/System/TCPClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/ChatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/src/GUI/JOptionPaneMultiInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/src/GUI/JOptionPaneMultiInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/src/System/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/src/System/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CW2_v2/src/System/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CW2_v2/src/System/TCPClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Polite Messaging/System/TCPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Polite Messaging/System/TCPServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/TCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/TCPClient.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

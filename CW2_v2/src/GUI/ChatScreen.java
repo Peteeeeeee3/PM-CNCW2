@@ -5,22 +5,22 @@ import System.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
+import java.util.Scanner;
 
 public class ChatScreen {
     private JPanel panel1;
-    private JList messaging_window;
     private JButton sendButton;
     private JLabel connection_label;
-    private JList topic_window;
     private JTextArea textArea1;
+    private JTextArea messageArea;
+    private JLabel topic_subject_label;
     private TCPClient client;
     private String email;
     private String search_subject;
     private String search_topic;
+    private String search_time;
 
     public ChatScreen(JFrame frame, String email, TCPClient client) {
         this.client = client;
@@ -38,6 +38,8 @@ public class ChatScreen {
         textArea1.setRows(5);
         search_subject = "";
         search_topic = "";
+        ChatScreen chatScreen = this;
+        topic_subject_label.setText("Topic: *ANY*       Subject: *ANY*");
 
         //https://stackoverflow.com/questions/2939218/getting-the-external-ip-address-in-java
         if (client.getIp().equals("localhost")) {
@@ -60,8 +62,20 @@ public class ChatScreen {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (textArea1.getText().equals("_UPDATE")) {
-                    JOptionPaneMultiInput.main(null, this);
+                    JOptionPaneMultiInput.main(null, chatScreen);
                     textArea1.setText("");
+                    client.updateMessages(search_topic, search_subject);
+                    //update search and topic label
+                    if (search_subject.equals("") && search_topic.equals("")) {
+                        topic_subject_label.setText("Topic: *ANY*       Subject: *ANY*");
+                    } else if (!search_subject.equals("") && !search_topic.equals("")) {
+                        topic_subject_label.setText("Topic: " + search_topic + "    Subject: " + search_subject);
+                    } else if (!search_subject.equals("")) {
+                        topic_subject_label.setText("Topic: " + search_topic + "    Subject: *ANY*");
+                    } else {
+                        topic_subject_label.setText("Topic: *ANY*       Subject: " + search_subject);
+                    }
+                    showMessages();
                 } else {
                     //client.send(new Message(email, "", "", textArea1.getText()));
                     client.getMessages().add(new Message(email, "", "", textArea1.getText()));
@@ -72,8 +86,22 @@ public class ChatScreen {
         });
     }
 
-    public String getSearch_subject() {return search_subject;}
-    public void setSearch_subject(String search_subject) {this.search_subject = search_subject;}
-    public String getSearch_topic() {return search_topic;}
-    public void setSearch_topic(String search_topic) {this.search_topic = search_topic;}
+    private void showMessages() {
+        StringBuilder display_text = new StringBuilder();
+        for (Message message : client.getMessages()) {
+            display_text.append(message.getHeaders().get(2)).append("\n");
+            for (String lines : message.getMessageContent()) {
+                display_text.append(lines);
+            }
+            display_text.append("\n\n");
+        }
+        messageArea.setText(display_text.toString());
+    }
+
+    String getSearch_subject() {return search_subject;}
+    void setSearch_subject(String search_subject) {this.search_subject = search_subject;}
+    String getSearch_topic() {return search_topic;}
+    void setSearch_topic(String search_topic) {this.search_topic = search_topic;}
+    public String getSearch_time() {return search_time;}
+    public void setSearch_time(String search_time) {this.search_time = search_time;}
 }
