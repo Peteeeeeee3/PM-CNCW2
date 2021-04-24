@@ -33,6 +33,7 @@ public class ConnectionScreen {
                     if (!(email_field.getText().contains(".") && email_field.getText().contains("@")) || !(ip_field.getText().contains(".") || ip_field.getText().equals("localhost"))) {
                         JOptionPane.showMessageDialog(connect_button, "Incorrect email address, IP address or port number. \nPlease check and correct entered data.");
                     } else {
+                        client.getDbc().connectToDB();
                         client.run(ip_field.getText(), Integer.parseInt(port_field.getText()));
                         new ChatScreen(frame, email_field.getText(), client);
                     }

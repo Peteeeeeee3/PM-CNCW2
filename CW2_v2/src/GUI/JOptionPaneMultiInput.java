@@ -16,7 +16,8 @@ public class JOptionPaneMultiInput {
         myPanel.add(new JLabel("Subject:"));
         myPanel.add(subjectField);
         myPanel.add(Box.createHorizontalStrut(15)); // a spacer
-        myPanel.add(new JLabel("Subject:"));
+        myPanel.add(new JLabel("Time of first shown message:"));
+        timeField.setText("MM/dd/yy HH:mm:ss");
         myPanel.add(timeField);
 
         int result = JOptionPane.showConfirmDialog(null, myPanel, "Update Messages", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
@@ -25,6 +26,8 @@ public class JOptionPaneMultiInput {
             System.out.println("Topic: #" + chatScreen.getSearch_topic());
             chatScreen.setSearch_subject(subjectField.getText());
             System.out.println("Subject: " + chatScreen.getSearch_subject());
+            chatScreen.setEarliestDate(timeField.getText());
+            System.out.println(chatScreen.getEarliestDate());
         }
     }
 }

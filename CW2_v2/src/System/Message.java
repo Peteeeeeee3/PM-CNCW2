@@ -20,6 +20,12 @@ public class Message {
         headers.add("Topic: " + topic);
         headers.add("Subject: " + subject);
         headers.add("Contents: " + contents);
+        this.id = id;
+        this.time = time;
+        this.sender = sender;
+        this.topic = topic;
+        this.subject = subject;
+        this.contents = contents;
         //store actual message
         messageContent.add(text);
     }
@@ -48,15 +54,13 @@ public class Message {
         headers.add("Message-id: SHA-256 " + id);
         headers.add("Time-sent: " + time);
         headers.add("From: " + sender);
-        headers.add("Topic: " + topic);
-        headers.add("Subject: " + subject);
-        headers.add("Contents: " + contents);
-    }
-
-    private void readMessage(ArrayList<String> msg) {
-        for (int i = 0; i < msg.size(); i++) {
-
+        if (!topic.equals("")) {
+            headers.add("Topic: " + topic);
         }
+        if (!subject.equals("")) {
+            headers.add("Subject: " + subject);
+        }
+        headers.add("Contents: " + contents);
     }
 
     private static String hashID(ArrayList<String> headers) {
@@ -103,4 +107,10 @@ public class Message {
     public ArrayList<String> getMessageContent() {
         return messageContent;
     }
+    public int getContents() {return contents;}
+    public long getTime() {return time;}
+    public String getId() {return id;}
+    public String getSender() {return sender;}
+    public String getSubject() {return subject;}
+    public String getTopic() {return topic;}
 }
